@@ -1,0 +1,1913 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>dbc264661d6c4717a8a139170e72c129</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="cell markdown" id="HvbxkaYVsgaR">
+<p><strong>FINAL PROJECT-MACHINE LEARNING</strong></p>
+<p><strong>SUBMISSION FORM</strong></p>
+<div class="output display_data">
+<p><img
+src="images/submission.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="BPVEuV4MK9uu">
+<p>#<strong>TABLE OF CONTENTS-</strong> 1.Introduction-
+1.1.<strong>Problem Statement</strong></p>
+<p>So we are Hired at a company which helps with rental appartements all
+over the germany ,and we are to help them with accurately finding
+different aspects of the housing market using the database,we are to
+make different models and then find the one which is most helpful for
+the company. The buisness will grow alot if they can predict the prices
+of these properties before hand as it will give them competitive
+advantage. More customer satisfaction</p>
+<p>1.2 DATA COLLECTION- So i am using a database from keggle(<a
+href="https://www.kaggle.com/datasets/harishkumardatalab/housing-price-prediction,https://www.kaggle.com/datasets/yasserh/housing-prices-dataset"
+class="uri">https://www.kaggle.com/datasets/harishkumardatalab/housing-price-prediction,https://www.kaggle.com/datasets/yasserh/housing-prices-dataset</a>)
+We are gonna use these datasets to predict prices for the
+properties.</p>
+</div>
+<div class="cell markdown" id="5_uFT4rnuPCV">
+<p>FIRST STEP-IMPORTING LIBRARIES TO READ THE DATA</p>
+</div>
+<div class="cell markdown" id="zrlcbqBeLcGR">
+<p>#LODAING LIBRARIES</p>
+</div>
+<div class="cell code" data-execution_count="24" id="fftQttGiuYpT">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sklearn</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split, GridSearchCV</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler, OneHotEncoder</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.compose <span class="im">import</span> ColumnTransformer</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> mean_squared_error, r2_score, mean_absolute_error</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.svm <span class="im">import</span> SVR</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> RandomForestRegressor, GradientBoostingRegressor</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.neighbors <span class="im">import</span> KNeighborsRegressor</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> DBSCAN</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression</span></code></pre></div>
+</div>
+<div class="cell markdown" id="Z1ZJC1UougmC">
+<p>#LOADING THE DATABASE</p>
+</div>
+<div class="cell code" data-execution_count="25"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="Qy7hTjnDsYaL" data-outputId="e333fe61-df24-418f-b76c-a63357d494e5">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df<span class="op">=</span>pd.read_csv(<span class="st">&quot;https://raw.githubusercontent.com/SeverusSnapee/ML-PROJECT/main/Housing.csv&quot;</span>)<span class="op">;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df.head()</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>df.dtypes</span></code></pre></div>
+<div class="output execute_result" data-execution_count="25">
+<pre><code>price                int64
+area                 int64
+bedrooms             int64
+bathrooms            int64
+stories              int64
+mainroad            object
+guestroom           object
+basement            object
+hotwaterheating     object
+airconditioning     object
+parking              int64
+prefarea            object
+furnishingstatus    object
+dtype: object</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="z53mEyqZD6R5">
+<p>#DATA CLEANING</p>
+</div>
+<div class="cell markdown" id="0kQhUuOdJKk8">
+<p>#CHANGE ALL THE OBJECTS TO INT</p>
+</div>
+<div class="cell code" data-execution_count="26" id="7P7vIoDWJS4t">
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;guestroom&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;guestroom&#39;</span>].<span class="bu">map</span>({<span class="st">&#39;yes&#39;</span>: <span class="dv">1</span>, <span class="st">&#39;no&#39;</span>: <span class="dv">0</span>})</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;mainroad&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;mainroad&#39;</span>].<span class="bu">map</span>({<span class="st">&#39;yes&#39;</span>: <span class="dv">1</span>, <span class="st">&#39;no&#39;</span>: <span class="dv">0</span>})</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;basement&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;basement&#39;</span>].<span class="bu">map</span>({<span class="st">&#39;yes&#39;</span>: <span class="dv">1</span>, <span class="st">&#39;no&#39;</span>: <span class="dv">0</span>})</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;hotwaterheating&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;hotwaterheating&#39;</span>].<span class="bu">map</span>({<span class="st">&#39;yes&#39;</span>: <span class="dv">1</span>, <span class="st">&#39;no&#39;</span>: <span class="dv">0</span>})</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;airconditioning&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;airconditioning&#39;</span>].<span class="bu">map</span>({<span class="st">&#39;yes&#39;</span>: <span class="dv">1</span>, <span class="st">&#39;no&#39;</span>: <span class="dv">0</span>})</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;prefarea&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;prefarea&#39;</span>].<span class="bu">map</span>({<span class="st">&#39;yes&#39;</span>: <span class="dv">1</span>, <span class="st">&#39;no&#39;</span>: <span class="dv">0</span>})</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;furnishingstatus&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;furnishingstatus&#39;</span>].<span class="bu">map</span>({<span class="st">&#39;furnished&#39;</span>: <span class="dv">2</span>, <span class="st">&#39;semi-furnished&#39;</span>: <span class="dv">1</span>, <span class="st">&#39;unfurnished&#39;</span>: <span class="dv">0</span>})</span></code></pre></div>
+</div>
+<div class="cell markdown" id="ZS0nZbnKJU2L">
+<p>#CHECKING IF IT WORKS</p>
+</div>
+<div class="cell code" data-execution_count="27"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:226}"
+id="6x5YkieNJXFo" data-outputId="af64110a-2025-421a-e425-d7383e96a815">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="27">
+
+  <div id="df-480bba66-32c9-4e0a-a5d8-7c843c909cc4" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>price</th>
+      <th>area</th>
+      <th>bedrooms</th>
+      <th>bathrooms</th>
+      <th>stories</th>
+      <th>mainroad</th>
+      <th>guestroom</th>
+      <th>basement</th>
+      <th>hotwaterheating</th>
+      <th>airconditioning</th>
+      <th>parking</th>
+      <th>prefarea</th>
+      <th>furnishingstatus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>13300000</td>
+      <td>7420</td>
+      <td>4</td>
+      <td>2</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>12250000</td>
+      <td>8960</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>12250000</td>
+      <td>9960</td>
+      <td>3</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>12215000</td>
+      <td>7500</td>
+      <td>4</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>3</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>11410000</td>
+      <td>7420</td>
+      <td>4</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-480bba66-32c9-4e0a-a5d8-7c843c909cc4')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-480bba66-32c9-4e0a-a5d8-7c843c909cc4 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-480bba66-32c9-4e0a-a5d8-7c843c909cc4');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-00145b51-3794-44ba-aee1-1f5e3bd117b3">
+  <button class="colab-df-quickchart" onclick="quickchart('df-00145b51-3794-44ba-aee1-1f5e3bd117b3')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-00145b51-3794-44ba-aee1-1f5e3bd117b3 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell markdown" id="6b3HbMsqXpAS">
+<p>#LOOKING AT THE DATABASE</p>
+</div>
+<div class="cell code" data-execution_count="28"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:715}"
+id="LdCQYGnDXswZ" data-outputId="b309fdc7-c357-4500-b31b-7ac0c6ee8f20">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>df.hist()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="28">
+<pre><code>array([[&lt;Axes: title={&#39;center&#39;: &#39;price&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;area&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;bedrooms&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;bathrooms&#39;}&gt;],
+       [&lt;Axes: title={&#39;center&#39;: &#39;stories&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;mainroad&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;guestroom&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;basement&#39;}&gt;],
+       [&lt;Axes: title={&#39;center&#39;: &#39;hotwaterheating&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;airconditioning&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;parking&#39;}&gt;,
+        &lt;Axes: title={&#39;center&#39;: &#39;prefarea&#39;}&gt;],
+       [&lt;Axes: title={&#39;center&#39;: &#39;furnishingstatus&#39;}&gt;, &lt;Axes: &gt;, &lt;Axes: &gt;,
+        &lt;Axes: &gt;]], dtype=object)</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="images/7461281dd75afb675128d0701b896e8e9084dfef.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="29"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="ormXpozTYo3V" data-outputId="b6e5e41e-b957-44d1-bf7b-9b5e4ac8351c">
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df.dtypes</span></code></pre></div>
+<div class="output execute_result" data-execution_count="29">
+<pre><code>price               int64
+area                int64
+bedrooms            int64
+bathrooms           int64
+stories             int64
+mainroad            int64
+guestroom           int64
+basement            int64
+hotwaterheating     int64
+airconditioning     int64
+parking             int64
+prefarea            int64
+furnishingstatus    int64
+dtype: object</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="AC4rRRr7Yol-">
+
+</div>
+<div class="cell markdown" id="3vSiMZ0j3Gfk">
+<p>#LOOKING AT THE OUTLIERS</p>
+</div>
+<div class="cell code" data-execution_count="30"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="GB4U311tAu-t" data-outputId="8a759815-dd4d-49c8-8b89-2f8cce62e717">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> DBSCAN</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>dbscan <span class="op">=</span> DBSCAN(eps<span class="op">=</span><span class="fl">0.5</span>, min_samples<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>outliers <span class="op">=</span> dbscan.fit_predict(df)</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>plt.scatter(df.iloc[:, <span class="dv">0</span>], df.iloc[:, <span class="dv">1</span>], c<span class="op">=</span>outliers, cmap<span class="op">=</span><span class="st">&#39;viridis&#39;</span>)</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;DBSCAN Outlier Detection&#39;</span>)</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Feature 1&#39;</span>)</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Feature 2&#39;</span>)</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>plt.colorbar(label<span class="op">=</span><span class="st">&#39;Outlier score&#39;</span>)</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Outlier points:&quot;</span>)</span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df[outliers <span class="op">==</span> <span class="op">-</span><span class="dv">1</span>])  <span class="co">#</span></span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="images/3a460f5f53c85694a53ece32e675bc0795d9ae13.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Outlier points:
+        price  area  bedrooms  bathrooms  stories  mainroad  guestroom  \
+0    13300000  7420         4          2        3         1          0   
+1    12250000  8960         4          4        4         1          0   
+2    12250000  9960         3          2        2         1          0   
+3    12215000  7500         4          2        2         1          0   
+4    11410000  7420         4          1        2         1          1   
+..        ...   ...       ...        ...      ...       ...        ...   
+540   1820000  3000         2          1        1         1          0   
+541   1767150  2400         3          1        1         0          0   
+542   1750000  3620         2          1        1         1          0   
+543   1750000  2910         3          1        1         0          0   
+544   1750000  3850         3          1        2         1          0   
+
+     basement  hotwaterheating  airconditioning  parking  prefarea  \
+0           0                0                1        2         1   
+1           0                0                1        3         0   
+2           1                0                0        2         1   
+3           1                0                1        3         1   
+4           1                0                1        2         0   
+..        ...              ...              ...      ...       ...   
+540         1                0                0        2         0   
+541         0                0                0        0         0   
+542         0                0                0        0         0   
+543         0                0                0        0         0   
+544         0                0                0        0         0   
+
+     furnishingstatus  
+0                   2  
+1                   2  
+2                   1  
+3                   2  
+4                   2  
+..                ...  
+540                 0  
+541                 1  
+542                 0  
+543                 2  
+544                 0  
+
+[545 rows x 13 columns]
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="IIh7MkxWJh6p">
+<p>#REMOVING THE OUTLIERS</p>
+</div>
+<div class="cell code" data-execution_count="31"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="5zeQ8Nb6Aw0s" data-outputId="cc2a5f6c-c28d-4796-96ee-38e1ba060aee">
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>Q1 <span class="op">=</span> df.quantile(<span class="fl">0.25</span>)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>Q3 <span class="op">=</span> df.quantile(<span class="fl">0.75</span>)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>IQR <span class="op">=</span> Q3 <span class="op">-</span> Q1</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>lower_bound <span class="op">=</span> Q1 <span class="op">-</span> <span class="fl">1.5</span> <span class="op">*</span> IQR</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>upper_bound <span class="op">=</span> Q3 <span class="op">+</span> <span class="fl">1.5</span> <span class="op">*</span> IQR</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>clean_data <span class="op">=</span> df[<span class="op">~</span>((df <span class="op">&lt;</span> lower_bound) <span class="op">|</span> (df <span class="op">&gt;</span> upper_bound)).<span class="bu">any</span>(axis<span class="op">=</span><span class="dv">1</span>)]</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>num_outliers_removed <span class="op">=</span> <span class="bu">len</span>(df) <span class="op">-</span> <span class="bu">len</span>(clean_data)</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Number of outliers removed: </span><span class="sc">{</span>num_outliers_removed<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(clean_data.describe())</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Number of outliers removed: 308
+              price          area    bedrooms   bathrooms     stories  \
+count  2.370000e+02    237.000000  237.000000  237.000000  237.000000   
+mean   4.052838e+06   4676.185654    2.780591    1.164557    1.611814   
+std    1.276966e+06   1681.597943    0.690709    0.393713    0.604667   
+min    1.750000e+06   1700.000000    1.000000    1.000000    1.000000   
+25%    3.150000e+06   3570.000000    2.000000    1.000000    1.000000   
+50%    3.850000e+06   4079.000000    3.000000    1.000000    2.000000   
+75%    4.620000e+06   5495.000000    3.000000    1.000000    2.000000   
+max    9.100000e+06  10500.000000    4.000000    3.000000    3.000000   
+
+       mainroad  guestroom    basement  hotwaterheating  airconditioning  \
+count     237.0      237.0  237.000000            237.0       237.000000   
+mean        1.0        0.0    0.248945              0.0         0.248945   
+std         0.0        0.0    0.433317              0.0         0.433317   
+min         1.0        0.0    0.000000              0.0         0.000000   
+25%         1.0        0.0    0.000000              0.0         0.000000   
+50%         1.0        0.0    0.000000              0.0         0.000000   
+75%         1.0        0.0    0.000000              0.0         0.000000   
+max         1.0        0.0    1.000000              0.0         1.000000   
+
+          parking  prefarea  furnishingstatus  
+count  237.000000     237.0        237.000000  
+mean     0.586498       0.0          0.839662  
+std      0.785129       0.0          0.753262  
+min      0.000000       0.0          0.000000  
+25%      0.000000       0.0          0.000000  
+50%      0.000000       0.0          1.000000  
+75%      1.000000       0.0          1.000000  
+max      2.000000       0.0          2.000000  
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="nBle4kgDsfFq">
+<ol>
+<li>Model Training</li>
+</ol>
+</div>
+<div class="cell markdown" id="SBhY1f6UJ_gA">
+<p>4.1 Splitting the Data and DATA PRE PROCESSING</p>
+</div>
+<div class="cell markdown" id="Xf-f7lHKXxI8">
+<p>I TRIED BY REMOVING DIFFERENT FEATURES</p>
+</div>
+<div class="cell code" data-execution_count="33"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:295}"
+id="x9B1-SQfFa51" data-outputId="71ad1f32-1157-4b42-f156-951ae151c6ed">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>clean_data <span class="op">=</span> pd.get_dummies(clean_data, drop_first<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>df1_train,df1_test<span class="op">=</span>sklearn.model_selection.train_test_split(clean_data,test_size<span class="op">=</span><span class="fl">0.2</span>,random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>x_train<span class="op">=</span>df1_train.drop(<span class="st">&quot;price&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>y_train<span class="op">=</span>df1_train[<span class="st">&quot;price&quot;</span>]</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>x_test<span class="op">=</span>df1_test.drop(<span class="st">&quot;price&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>y_test<span class="op">=</span>df1_test[<span class="st">&quot;price&quot;</span>]</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>x_train<span class="op">=</span>x_train.drop(<span class="st">&quot;airconditioning&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>x_train<span class="op">=</span>x_train.drop(<span class="st">&quot;prefarea&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>x_train<span class="op">=</span>x_train.drop(<span class="st">&quot;furnishingstatus&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>x_train<span class="op">=</span>x_train.drop(<span class="st">&quot;basement&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>x_train<span class="op">=</span>x_train.drop(<span class="st">&quot;mainroad&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>x_train<span class="op">=</span>x_train.drop(<span class="st">&quot;guestroom&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>x_train<span class="op">=</span>x_train.drop(<span class="st">&quot;hotwaterheating&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>x_train<span class="op">=</span>x_train.drop(<span class="st">&quot;parking&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>x_train<span class="op">=</span>x_train.drop(<span class="st">&quot;stories&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a>x_test<span class="op">=</span>x_test.drop(<span class="st">&quot;airconditioning&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a>x_test<span class="op">=</span>x_test.drop(<span class="st">&quot;prefarea&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-25"><a href="#cb14-25" aria-hidden="true" tabindex="-1"></a>x_test<span class="op">=</span>x_test.drop(<span class="st">&quot;furnishingstatus&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-26"><a href="#cb14-26" aria-hidden="true" tabindex="-1"></a>x_test<span class="op">=</span>x_test.drop(<span class="st">&quot;basement&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-27"><a href="#cb14-27" aria-hidden="true" tabindex="-1"></a>x_test<span class="op">=</span>x_test.drop(<span class="st">&quot;mainroad&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-28"><a href="#cb14-28" aria-hidden="true" tabindex="-1"></a>x_test<span class="op">=</span>x_test.drop(<span class="st">&quot;guestroom&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-29"><a href="#cb14-29" aria-hidden="true" tabindex="-1"></a>x_test<span class="op">=</span>x_test.drop(<span class="st">&quot;hotwaterheating&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-30"><a href="#cb14-30" aria-hidden="true" tabindex="-1"></a>x_test<span class="op">=</span>x_test.drop(<span class="st">&quot;parking&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-31"><a href="#cb14-31" aria-hidden="true" tabindex="-1"></a>x_test<span class="op">=</span>x_test.drop(<span class="st">&quot;stories&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-32"><a href="#cb14-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-33"><a href="#cb14-33" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;x_train Size&quot;</span>,x_train.shape)</span>
+<span id="cb14-34"><a href="#cb14-34" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;x_test Size&quot;</span>,x_test.shape)</span>
+<span id="cb14-35"><a href="#cb14-35" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;y_train Size&quot;</span>,y_train.shape)</span>
+<span id="cb14-36"><a href="#cb14-36" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;y_test Size&quot;</span>,y_test.shape)</span>
+<span id="cb14-37"><a href="#cb14-37" aria-hidden="true" tabindex="-1"></a>x_test.head()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>x_train Size (189, 3)
+x_test Size (48, 3)
+y_train Size (189,)
+y_test Size (48,)
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="33">
+
+  <div id="df-48e0d324-358f-4fe8-b543-da6c834478a0" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>area</th>
+      <th>bedrooms</th>
+      <th>bathrooms</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>336</th>
+      <td>8080</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>4100</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>503</th>
+      <td>4000</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>355</th>
+      <td>8250</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>8880</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-48e0d324-358f-4fe8-b543-da6c834478a0')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-48e0d324-358f-4fe8-b543-da6c834478a0 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-48e0d324-358f-4fe8-b543-da6c834478a0');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-4fa3f8e4-c7c1-4426-bcee-fffe2258f04c">
+  <button class="colab-df-quickchart" onclick="quickchart('df-4fa3f8e4-c7c1-4426-bcee-fffe2258f04c')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-4fa3f8e4-c7c1-4426-bcee-fffe2258f04c button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell markdown" id="TWcbqcKIKgho">
+<p>#LOOKING AT PREDICTED VS REAL</p>
+</div>
+<div class="cell code" data-execution_count="34"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:619}"
+id="Qbwre5s5Kj8U" data-outputId="f63953d5-79b6-4e88-eac9-bf3ad3082f09">
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>linear_reg <span class="op">=</span> LinearRegression()</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>linear_reg.fit(x_train, y_train)</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> linear_reg.predict(x_test)</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>plt.scatter(y_test, y_pred, color<span class="op">=</span><span class="st">&#39;blue&#39;</span>)</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>plt.plot([<span class="bu">min</span>(y_test), <span class="bu">max</span>(y_test)], [<span class="bu">min</span>(y_test), <span class="bu">max</span>(y_test)], linestyle<span class="op">=</span><span class="st">&#39;--&#39;</span>, color<span class="op">=</span><span class="st">&#39;red&#39;</span>)</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Actual Price&#39;</span>)</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Predicted Price&#39;</span>)</span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;ActualPrice vs PredictedPrice&#39;</span>)</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>mse <span class="op">=</span> mean_squared_error(y_test, y_pred)</span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>r2 <span class="op">=</span> r2_score(y_test, y_pred)</span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Linear Regression MSE: </span><span class="sc">{</span>mse<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Linear Regression R-squared: </span><span class="sc">{</span>r2<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="images/a41add4701a5a6126dfbf4a9b1a4b3397b4ed9e0.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Linear Regression MSE: 1258476250518.7432
+Linear Regression R-squared: 0.27432203508711017
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="bDr-uym2L-Uo">
+<p>MODELS</p>
+</div>
+<div class="cell markdown" id="bzvem53356Uf">
+<p>LINEAR REGRESSION</p>
+<p>Linear regression aims to find the best-fit straight line through the
+data points. It minimizes the sum of squared differences between the
+observed and predicted values (least squares method).</p>
+</div>
+<div class="cell code" data-execution_count="35"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="cwfBYbPGSOoU" data-outputId="756b71a2-de1d-423c-b5d7-a3d573457942">
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> mean_squared_error, r2_score</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>linear_reg <span class="op">=</span> LinearRegression()</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>linear_reg.fit(x_train, y_train)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> linear_reg.predict(x_test)</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>mse_lineaer <span class="op">=</span> mean_squared_error(y_test, y_pred)</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>r2_one_dataset <span class="op">=</span> r2_score(y_test, y_pred)</span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;R2 WITH ONE DATASET ONLY&quot;</span>,</span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>r2_one_dataset)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>R2 WITH ONE DATASET ONLY 0.27432203508711017
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="lyCp5qqJQy9c">
+<p>We got .2 which is not best but not the worst</p>
+</div>
+<div class="cell markdown" id="TvRV0-6LEYDC">
+<p>#SVC MODEL</p>
+</div>
+<div class="cell code" data-execution_count="36"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="HjRF6lbC55xc" data-outputId="e86ad84f-ef42-4f2f-8e28-708dcf3fa9d4">
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> mean_absolute_error</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>model<span class="op">=</span>sklearn.svm.SVC()</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>model.fit(x_train,y_train)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>y_predicted<span class="op">=</span>model.predict(x_test)</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>accuracy<span class="op">=</span>sklearn.metrics.accuracy_score(y_test,y_predicted)</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>accuracy</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>mae_svr <span class="op">=</span> mean_absolute_error(y_test, y_predicted)</span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;svr mae: </span><span class="sc">{</span>mae_svr<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>r2 <span class="op">=</span> r2_score(y_test, y_predicted)</span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;sVR R-squared: </span><span class="sc">{</span>r2<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>svr mae: 1104906.25
+sVR R-squared: -0.21166548389308448
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="t6qGczazPq2i">
+<p>MAE is the average absolute difference between actual and predicted
+values, giving us an idea of how far off our predictions are on
+average.</p>
+</div>
+<div class="cell markdown" id="d4CgA7v-ZJ9N">
+<p>SVR MODEL WITH LINEAR KERNAL</p>
+</div>
+<div class="cell markdown" id="PB-789vORCTq">
+<p>Linear Kernel The linear kernel in SVR represents a linear
+relationship between the input variables (features) and the target
+variables, It is good when the relationship between the features and the
+target is believed to be linear.</p>
+</div>
+<div class="cell code" data-execution_count="37"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="WdIa9rJu2uNM" data-outputId="eb5acb38-7f12-40b5-99e3-090e6a0a98c0">
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>svr <span class="op">=</span> SVR(kernel<span class="op">=</span><span class="st">&#39;linear&#39;</span>)</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>svr.fit(x_train, y_train)</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>y_predicted <span class="op">=</span> svr.predict(x_test)</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>r2 <span class="op">=</span> r2_score(y_test, y_predicted)</span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;SVR R-squared: </span><span class="sc">{</span>r2<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>SVR R-squared: 0.1263011445475538
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="k08QQ124RPnf">
+<p>Polynomial Kernel: The polynomial kernel calculates the similarity
+between two points in a higher-dimensional space using polynomial
+functions of the original features.</p>
+</div>
+<div class="cell code" data-execution_count="38"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="2qxA-6MN0Ztn" data-outputId="ee47f040-9239-412b-f14d-1f3aa8e29871">
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>svr2 <span class="op">=</span> SVR(kernel<span class="op">=</span><span class="st">&#39;poly&#39;</span>,degree<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>svr2.fit(x_train, y_train)</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>y_predicted2 <span class="op">=</span> svr2.predict(x_test)</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>r2new <span class="op">=</span> r2_score(y_test, y_predicted2)</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;SVR R-squared: </span><span class="sc">{</span>r2new<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>SVR R-squared: -0.03329273841032454
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="cl-d3bDERiD2">
+<p>The RBF kernel calculates all the similarity based on the distance
+from a reference point (or center), using a Gaussian distribution.</p>
+</div>
+<div class="cell code" data-execution_count="39"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="H3_NhrGw0hmS" data-outputId="3b29881b-c9d9-42d3-98ea-da124946243d">
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>svr3<span class="op">=</span> SVR(kernel<span class="op">=</span><span class="st">&#39;rbf&#39;</span>,gamma<span class="op">=</span><span class="fl">0.1</span>)</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>svr3.fit(x_train, y_train)</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>y_predicted3 <span class="op">=</span> svr3.predict(x_test)</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>r2new1 <span class="op">=</span> r2_score(y_test, y_predicted3)</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;SVR R-squared: </span><span class="sc">{</span>r2new<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>SVR R-squared: -0.03329273841032454
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="Ces1UpWYEdtf">
+<p>OUT OF ALL THESE LINEAR WAS ONLY THE GOOD ONE</p>
+</div>
+<div class="cell markdown" id="IIF4FIIQZfpl">
+<p>#GRADIENT BOOSTING</p>
+</div>
+<div class="cell markdown" id="XK__K5m1Rv8h">
+<p>GBR builds a series of small decision trees each time, each one
+trying to fix errors made by the previous ones. It's like learning from
+mistakes step by step and getting better.</p>
+</div>
+<div class="cell code" data-execution_count="41"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="vb9RuY39SAMR" data-outputId="0ae4010e-2166-4802-ef93-e0e285a216ff">
+<div class="sourceCode" id="cb28"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>gbr <span class="op">=</span> GradientBoostingRegressor(random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>gbr.fit(x_train, y_train)</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>y_pred_gbr <span class="op">=</span> gbr.predict(x_test)</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Gbr r squared value: </span><span class="sc">{</span>r2_score(y_test, y_pred_gbr)<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Gbr r squared value: 0.4373392375949442
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="1nprBn2YSG5-">
+<p>gbr works better then svr with linear kernal,it is the best till
+now</p>
+</div>
+<div class="cell markdown" id="w5vwenutSKiv">
+<p>#K NEIGHBIRS REGRESSOR</p>
+<hr />
+</div>
+<div class="cell markdown" id="jYwimNZ2SUQ0">
+<p>K neighbor regression works by predicting the price by looking at the
+prices of the nearest houses (neighbors) in the aread. If they are
+similar, the prices should be close too. It's simple and works well with
+smaller datasets. but due to the area and everything it is not
+accurate</p>
+</div>
+<div class="cell code" data-execution_count="42"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="hinH-FiiLI5w" data-outputId="b764956f-c4bd-4b7b-baf9-dd4721b3600c">
+<div class="sourceCode" id="cb30"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>knn <span class="op">=</span> KNeighborsRegressor()</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>knn.fit(x_train, y_train)</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>y_pred_knn <span class="op">=</span> knn.predict(x_test)</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;KNN R-squared: </span><span class="sc">{</span>r2_score(y_test, y_pred_knn)<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;KNN MSE: </span><span class="sc">{</span>mean_squared_error(y_test, y_pred_knn)<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>KNN R-squared: 0.05199823262897696
+KNN MSE: 1644031881041.6667
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="44"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="eNS49peXaHUo" data-outputId="8c7d9605-9a9d-42aa-efa9-acc30ca52469">
+<div class="sourceCode" id="cb32"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>knn <span class="op">=</span> KNeighborsRegressor(n_neighbors<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>knn.fit(x_train, y_train)</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> knn.predict(x_test)</span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>mse <span class="op">=</span> mean_squared_error(y_test, y_pred)</span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;K Neighbors regressor mse value: </span><span class="sc">{</span>mse<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>K Neighbors regressor mse value: 1644031881041.6667
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="B49mqFNUSsx7">
+<p>KNN was okay, but not as good as GBR.</p>
+</div>
+<div class="cell markdown" id="a9fe3FIC_fOl">
+<p>#RANDOM FOREST REGRESSEOR</p>
+</div>
+<div class="cell markdown" id="quI887OrSvc6">
+<p>RFR creates many decision trees and takes an average of their
+predictions. This helps to make more accurate and stable predictions
+than a single tree.</p>
+</div>
+<div class="cell code" data-execution_count="45"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="yItDHMFf_i4X" data-outputId="d80465a1-04be-476a-93d9-8a1a3c25f02f">
+<div class="sourceCode" id="cb34"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>rf <span class="op">=</span> RandomForestRegressor(n_estimators<span class="op">=</span><span class="dv">100</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>rf.fit(x_train, y_train)</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>y_pred_rf <span class="op">=</span> rf.predict(x_test)</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>mse_rf <span class="op">=</span> mean_squared_error(y_test, y_pred_rf)</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Random forest regressor mse_rf value </span><span class="sc">{</span>mse_rf<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>r2 <span class="op">=</span> r2_score(y_test, y_pred)</span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="vs">fr&quot;Random forest regressor r Squared value: </span><span class="sc">{</span>r2<span class="sc">}</span><span class="vs">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Random forest regressor mse_rf value 964182077900.0934
+Random forest regressor r Squared value: 0.05199823262897696
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="3hsAX5UISxQD">
+<p>RFR was decent but didn’t beat the performance of GBR.</p>
+</div>
+<div class="cell markdown" id="3gh6jLEeZiiH">
+<p>NOW LETS TRY THESE MODELS WITH DIFFERENT DATA SET</p>
+</div>
+<div class="cell code" data-execution_count="46"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:226}"
+id="8NTmehi9Znb4" data-outputId="46b25308-4676-450d-87f6-75ef55bbb4dc">
+<div class="sourceCode" id="cb36"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>df2<span class="op">=</span>pd.read_csv(<span class="st">&quot;https://raw.githubusercontent.com/SeverusSnapee/ML-PROJECT/main/housing_price_dataset.csv&quot;</span>)<span class="op">;</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>df2<span class="op">=</span>df2.drop(<span class="st">&quot;Neighborhood&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>df2.dtypes</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>df2<span class="op">=</span>df2.drop(<span class="st">&#39;YearBuilt&#39;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>column_mapping <span class="op">=</span> {</span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;SquareFeet&#39;</span>: <span class="st">&#39;area&#39;</span>,</span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Bathrooms&#39;</span>:<span class="st">&#39;bathrooms&#39;</span>,</span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Bedrooms&#39;</span>:<span class="st">&#39;bedrooms&#39;</span></span>
+<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb36-11"><a href="#cb36-11" aria-hidden="true" tabindex="-1"></a>df2.rename(columns<span class="op">=</span>column_mapping, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb36-12"><a href="#cb36-12" aria-hidden="true" tabindex="-1"></a>df2.head()</span>
+<span id="cb36-13"><a href="#cb36-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-14"><a href="#cb36-14" aria-hidden="true" tabindex="-1"></a><span class="co"># x_test2=df2.drop(&#39;Price&#39;,axis=1)</span></span>
+<span id="cb36-15"><a href="#cb36-15" aria-hidden="true" tabindex="-1"></a><span class="co"># y_test2=df2[&#39;Price&#39;]</span></span>
+<span id="cb36-16"><a href="#cb36-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-17"><a href="#cb36-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-18"><a href="#cb36-18" aria-hidden="true" tabindex="-1"></a><span class="co"># y_pred = linear_reg.predict(x_test2)</span></span>
+<span id="cb36-19"><a href="#cb36-19" aria-hidden="true" tabindex="-1"></a><span class="co"># mse = mean_squared_error(y_test2, y_pred)</span></span>
+<span id="cb36-20"><a href="#cb36-20" aria-hidden="true" tabindex="-1"></a><span class="co"># r21 = r2_score(y_test2, y_pred)</span></span>
+<span id="cb36-21"><a href="#cb36-21" aria-hidden="true" tabindex="-1"></a><span class="co"># mse</span></span>
+<span id="cb36-22"><a href="#cb36-22" aria-hidden="true" tabindex="-1"></a><span class="co"># r21</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="46">
+
+  <div id="df-663991bf-1167-4e86-9061-e6f259cc7b7a" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>area</th>
+      <th>bedrooms</th>
+      <th>bathrooms</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2126</td>
+      <td>4</td>
+      <td>1</td>
+      <td>215355.283618</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2459</td>
+      <td>3</td>
+      <td>2</td>
+      <td>195014.221626</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1860</td>
+      <td>2</td>
+      <td>1</td>
+      <td>306891.012076</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2294</td>
+      <td>2</td>
+      <td>1</td>
+      <td>206786.787153</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2130</td>
+      <td>5</td>
+      <td>2</td>
+      <td>272436.239065</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-663991bf-1167-4e86-9061-e6f259cc7b7a')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-663991bf-1167-4e86-9061-e6f259cc7b7a button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-663991bf-1167-4e86-9061-e6f259cc7b7a');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-a5a7c614-00d3-498e-82da-6d8afe7f012a">
+  <button class="colab-df-quickchart" onclick="quickchart('df-a5a7c614-00d3-498e-82da-6d8afe7f012a')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-a5a7c614-00d3-498e-82da-6d8afe7f012a button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell markdown" id="nbpOCSVeS8oC">
+<p>CREATING NEW DATASET POINT TO TRy THEM ON the model already made and
+then train it more see if it gets better</p>
+</div>
+<div class="cell code" data-execution_count="47"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:619}"
+id="YaEMxz33eLPN" data-outputId="2c1d7605-ef1c-4ac0-f388-7ab4eeee367c">
+<div class="sourceCode" id="cb37"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>df2_train,df2_test<span class="op">=</span>sklearn.model_selection.train_test_split(df2,test_size<span class="op">=</span><span class="fl">0.3</span>,random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>x_train5<span class="op">=</span>df2_train.drop(<span class="st">&quot;Price&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>y_train5<span class="op">=</span>df2_train[<span class="st">&quot;Price&quot;</span>]</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>x_test5<span class="op">=</span>df2_test.drop(<span class="st">&quot;Price&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>y_test5<span class="op">=</span>df2_test[<span class="st">&quot;Price&quot;</span>]</span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>linear_reg <span class="op">=</span> LinearRegression()</span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>linear_reg.fit(x_train, y_train)</span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>linear_reg.fit(x_train5,y_train5)</span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> linear_reg.predict(x_test5)</span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>plt.scatter(y_test5, y_pred, color<span class="op">=</span><span class="st">&#39;blue&#39;</span>)</span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a>plt.plot([<span class="bu">min</span>(y_test5), <span class="bu">max</span>(y_test5)], [<span class="bu">min</span>(y_test5), <span class="bu">max</span>(y_test5)], linestyle<span class="op">=</span><span class="st">&#39;--&#39;</span>, color<span class="op">=</span><span class="st">&#39;red&#39;</span>)</span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Actual&#39;</span>)</span>
+<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Predicted&#39;</span>)</span>
+<span id="cb37-15"><a href="#cb37-15" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Actual vs Predicted&#39;</span>)</span>
+<span id="cb37-16"><a href="#cb37-16" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb37-17"><a href="#cb37-17" aria-hidden="true" tabindex="-1"></a>mse <span class="op">=</span> mean_squared_error(y_test5, y_pred)</span>
+<span id="cb37-18"><a href="#cb37-18" aria-hidden="true" tabindex="-1"></a>r2 <span class="op">=</span> r2_score(y_test5, y_pred)</span>
+<span id="cb37-19"><a href="#cb37-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-20"><a href="#cb37-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Linear Regression mse Value: </span><span class="sc">{</span>mse<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb37-21"><a href="#cb37-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Linear Regression r Squared Value: </span><span class="sc">{</span>r2<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="images/ea916094eaca49ed3290335640917bb003bb7f8f.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Linear Regression mse Value: 2469205028.1699114
+Linear Regression r Squared Value: 0.5727685785938628
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="97j7ztE-TGDr">
+<p>This is the best r squared value we had got yet</p>
+</div>
+<div class="cell markdown" id="R4ZW83YD_niE">
+<p>#NOW TRY HYPERPAREMETERS FOR GRADIENTBOOSTINGREGRESSOR AND GRIDSEARCH
+MODEL</p>
+</div>
+<div class="cell markdown" id="jBmOlTnRUSKY">
+<p>Hyperparameters are configuration settings used to tune how a model
+learns. Examples include the kernel type in SVC, the penalty parameter
+C, and others.</p>
+<p>Why Tuning is Important: Properly tuning hyperparameters can
+significantly improve a model's performance. It helps the model
+generalize better to new, unseen data by preventing overfitting or
+underfitting.</p>
+<p>How to Tune: Techniques like GridSearchCV or RandomizedSearchCV can
+be used to systematically search for the best combination of
+hyperparameters.</p>
+</div>
+<div class="cell markdown" id="Vk_wuSkvT13G">
+<p>param_grid: This dictionary defines the grid of hyperparameters that
+GridSearchCV will search over.</p>
+<pre><code>&#39;n_estimators&#39;: Number of boosting stages (trees) to be used in the ensemble.
+&#39;learning_rate&#39;: Rate at which the boosting process learns from mistakes.
+&#39;max_depth&#39;: Maximum depth of the individual decision trees.</code></pre>
+</div>
+<div class="cell code" data-execution_count="56"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="UpTtuSFP_nNt" data-outputId="804f602a-d6b1-4680-d8bc-8a5be935b5a7">
+<div class="sourceCode" id="cb40"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>gbr <span class="op">=</span> GradientBoostingRegressor(random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>param_grid <span class="op">=</span> {</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;n_estimators&#39;</span>: [<span class="dv">50</span>, <span class="dv">100</span>, <span class="dv">150</span>],</span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;learning_rate&#39;</span>: [<span class="fl">0.1</span>, <span class="fl">0.3</span>, <span class="fl">0.5</span>],</span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;max_depth&#39;</span>: [<span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">9</span>]</span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a>grid_search <span class="op">=</span> GridSearchCV(estimator<span class="op">=</span>gbr, param_grid<span class="op">=</span>param_grid, cv<span class="op">=</span><span class="dv">5</span>, scoring<span class="op">=</span><span class="st">&#39;r2&#39;</span>)</span>
+<span id="cb40-10"><a href="#cb40-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-11"><a href="#cb40-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-12"><a href="#cb40-12" aria-hidden="true" tabindex="-1"></a>grid_search.fit(x_train, y_train)</span>
+<span id="cb40-13"><a href="#cb40-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-14"><a href="#cb40-14" aria-hidden="true" tabindex="-1"></a>best_gbr <span class="op">=</span> grid_search.best_estimator_</span>
+<span id="cb40-15"><a href="#cb40-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-16"><a href="#cb40-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-17"><a href="#cb40-17" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> best_gbr.predict(x_test)</span>
+<span id="cb40-18"><a href="#cb40-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-19"><a href="#cb40-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-20"><a href="#cb40-20" aria-hidden="true" tabindex="-1"></a>r2_gradient<span class="op">=</span> r2_score(y_test, y_pred)</span>
+<span id="cb40-21"><a href="#cb40-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Hyperparameter gradient boosting regressor r2 value: </span><span class="sc">{</span>r2_gradient<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb40-22"><a href="#cb40-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-23"><a href="#cb40-23" aria-hidden="true" tabindex="-1"></a>mae <span class="op">=</span> mean_absolute_error(y_test, y_pred)</span>
+<span id="cb40-24"><a href="#cb40-24" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Hyperparameter gradient boosting regressor mae value: </span><span class="sc">{</span>mae<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb40-25"><a href="#cb40-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-26"><a href="#cb40-26" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Best parameters found by gridsearchcv:&quot;</span>)</span>
+<span id="cb40-27"><a href="#cb40-27" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(grid_search.best_params_)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Hyperparameter gradient boosting regressor r2 value: 0.4722225634485435
+Hyperparameter gradient boosting regressor mae value: 766603.6091318922
+Best parameters found by gridsearchcv:
+{&#39;learning_rate&#39;: 0.1, &#39;max_depth&#39;: 5, &#39;n_estimators&#39;: 50}
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="LV2i5gUoUdmh">
+<p>THIS IS THE BEST PARAMETERS FOR THIS TO GET BEST R Squared value</p>
+</div>
+<div class="cell markdown" id="kIqSgvY7AdA6">
+<p>#Model Evaluation</p>
+</div>
+<div class="cell markdown" id="7rbl2u7KAfGj">
+<p>I Think GREDIENT BOOSTING REGRESSOR WITH HYPERPARAMETERS DID GOOD
+WITH 0.43 R SQUARE VALUE WITH BOTH DATASET BUT WITHOUT SECOND DATASET WE
+HAVE 27% percent accuracy if we keep all the Enitity in the dataset. BUT
+WITH THIS DATASET WE HAVE 57 % R square with linear regression model
+Which is better</p>
+</div>
+<div class="cell code" data-execution_count="57"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="XoX8648QBc70" data-outputId="f26c67df-6a10-43af-ace1-37d98833ae43">
+<div class="sourceCode" id="cb42"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;R2 WITH ONE DATASET ONLY&quot;</span>,</span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>r2_one_dataset)</span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Linear Regression R-squared: </span><span class="sc">{</span>r2<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>R2 WITH ONE DATASET ONLY 0.27432203508711017
+Linear Regression R-squared: 0.5727685785938628
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="ZOX3OWtlCbpz">
+<p>Conclusion and Recommendations:</p>
+<p>I would recommend gradient boositng regressor as it has the highest
+r2 value for pridcting housing prices ,As i saw in the beggining with
+one data set only the linear regression r squared value was at 27
+because there were only 500 values out of which 200 were outliers so i
+tried everything with that dataset and got it to 40% by gradient
+boosting regressor then i though of adding more data points and added
+another dataset but that dataset had only 4 entity so i changed the
+first data as this one and run the model on those entity only so i can
+use this dataset to train the model with 5000 rows of data so i did that
+and with that the linear regression model is at 57% which is highest of
+all.SO this is my conclusion.</p>
+</div>
+<div class="cell markdown" id="pXxK79dwDVQE">
+<p>#BUISNESS PART</p>
+</div>
+<div class="cell markdown" id="DnXI9_fhDaq4">
+<p>The company can use this to get more customers for the company i
+think this will help them with more sales.</p>
+</div>
+<div class="cell markdown" id="cX8WCp1eDPrq">
+<p>#FUTURE RECOMMENDATIONS</p>
+</div>
+<div class="cell markdown" id="x2yLVOLsDThf">
+<p>In future we can try to give more dataset to increase the accuracy
+and try to remove more outliers to get more accuracy</p>
+</div>
+</body>
+</html>
